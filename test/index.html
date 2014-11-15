@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="appSample" ng-controller="AppController">
+  <head>
+    <title> Sample Angular-Datatable</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendor/datatables/media/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="common/directives/datatable.css" />
+
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/datatables/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="common/directives/datatable.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+  </head>
+  <body>
+    <h2>Muliple Selection Grid</h2>
+    <br/>
+    <table data-table="myTable" data-selection="multiple" data-source="getGridData" data-local="true" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th data-format="<a href='#' ng-click='open({{index}})'>Edit</a>">Edit</th>
+                <th data-format="{{Name}} {{Position}}">Custom Column Header</th>
+                <th data-column="Name">Name</th>
+                <th data-column="Position">Position</th>
+                <th data-formatFunction="test">test3</th>
+                <th data-column="Office">Office</th>
+                <th data-column="Age">Age</th>
+                <th data-column="StartDate">Start Date</th>
+                <th data-column="Salary">Salary</th>
+            </tr>
+        </thead>
+    </table>
+    <br/>
+    <h2>Single Selection Grid</h2>
+    <br/>
+    <table data-table="test" data-selection="single" data-source="getTestData" data-local="true" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <!-- hidden field -->
+                <th data-column="id" class="hidden"></th>
+                <th data-format="{{index}}">Row Number</th>
+                <th data-format="{{id}} - {{Name}}">Custom Column Header</th>
+                <th data-column="Name">Name</th>
+                <th data-column="Salary">Salary</th>
+            </tr>
+        </thead>
+    </table>
+  </body>
+</html>
