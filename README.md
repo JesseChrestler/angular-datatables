@@ -17,6 +17,7 @@ Implementation
 				<th data-format="{{firstName}} {{lastName}}">Employee Name</th>
 				<th data-column="salary">Employee Salary</th>
 				<th data-column="<a href='javascript:void(0);' ng-click='edit({{index}})'">Edit</th>
+				<th data-format="{{ 'birthdate' | date:'MM/dd/yyyy'}}">DOB</th>
 			</tr>
 		</thead>
 	</table>
@@ -33,17 +34,20 @@ Implementation
 	        "id":1,
 	        "FirstName" : "Tom",
 	        "LastName" : "Jones",
-	        "Salary" : "$120,800"
+	        "Salary" : "$120,800",
+	        "Birthdate": "1977-12-1"
 	    },{
 	        "id":2,
 	        "FirstName" : "Joe",
 	        "LastName" : "Jones",
-	        "Salary" : "$220,800"
+	        "Salary" : "$220,800",
+	        "Birthdate": "1955-11-7"
 	    },{
 	        "id":3,
 	        "FirstName" : "Bob",
 	        "LastName" : "Jones",
-	        "Salary" : "$75,800"
+	        "Salary" : "$75,800",
+	        "Birthdate": "1981-03-14"
       }]);
 	};
 });
