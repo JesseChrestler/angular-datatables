@@ -1,0 +1,28 @@
+{
+    
+    "recordsTotal":3,
+    "recordsFiltered":3,
+
+    "data":[{
+        "Name":"Tiger Nixon",
+        "Position" : "System Architect",
+        "Office" : "Edinburgh", 
+        "Age" : "61",
+        "StartDate" : "2011/01/12",
+        "Salary" : "120800"
+      },{
+        "Name":"John Doe",
+        "Position" : "Architect",
+        "Office" : "New York", 
+        "Age" : "42",
+        "StartDate" : "2012/06/25",
+        "Salary" : "220800"
+      },{
+        "Name":"Dave Miller",
+        "Position" : "BA",
+        "Office" : "Charlotte", 
+        "Age" : "33",
+        "StartDate" : "2008/04/12",
+        "Salary" : "75800"
+    }]
+}

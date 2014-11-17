@@ -27,7 +27,7 @@
                 <th data-column="Office">Office</th>
                 <th data-column="Age">Age</th>
                 <th data-column="StartDate">Start Date</th>
-                <th data-column="Salary">Salary</th>
+                <th data-format="{{ 'Salary' | currency }}">Salary</th>
             </tr>
         </thead>
     </table>
@@ -42,7 +42,7 @@
                 <th data-format="{{index}}">Row Number</th>
                 <th data-format="{{id}} - {{Name}}">Custom Column Header</th>
                 <th data-column="Name">Name</th>
-                <th data-column="Salary">Salary</th>
+                <th data-format="{{ 'Salary' | currency }}">Salary</th>
             </tr>
         </thead>
     </table>
