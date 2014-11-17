@@ -67,11 +67,11 @@ Options
 >
 >  **data-format:** data format let's you use angular syntax to format your columns any way you choose
 >  >  **Example:** data-format="{{firstName}} {{lastName}}"
->  >
->  > **Note:** 
->  >data format doesn't currently support sorting. I will be adding this in the near future.
 >  
 >  **data-formatFuntion:** data format function gives you yet another way to format a given cell.
+>
+>  **data-sort:** data sort allows you to choose in which order you want to sort the specified column
+> > **Example:** data-sort="lastName, firstName"
 
 #### Datatables Exposed Functions
 
